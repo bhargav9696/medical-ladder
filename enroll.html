@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now | Medical Ladder</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf0f5;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff85a2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: slideIn 2s ease-out forwards;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #ff507e;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1s;
+            transition: transform 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd1e8;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInUp 2s ease-out forwards;
+            animation-delay: 2s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .cta {
+            background-color: #ff507e;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #e03a64;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ff507e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            animation: fadeInUp 2s ease-out forwards;
+            animation-delay: 3s;
+        }
+
+        /* Keyframe Animations */
+        @keyframes slideIn {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Style for Image Placeholders */
+        .image-space {
+            width: 70%; /* Reduced width to make images smaller */
+            height: 250px; /* Adjusted height */
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image-space img {
+            max-width: 100%; /* Ensures images fit the container */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 10px;
+        }
+
+        /* Row Styling for Better Separation */
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap; /* Ensures content wraps in smaller screens */
+        }
+
+        .row .column {
+            margin: 10px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Consistent Spacing */
+        .content {
+            padding: 40px 20px;
+        }
+
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Medical Ladder</h1>
+    <p>NEET 2025 Online Coaching - Enroll Now to Start Your Journey!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="enroll.html">Courses</a>
+    <a href="syllabus.html">Chapters</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="content">
+    <!-- Row for Heading -->
+    <div class="row">
+        <div class="column">
+            <h2>Enroll Now for NEET 2025 Preparation</h2>
+            <p>Join our extensive and interactive online coaching program to excel in NEET 2025. Study at your own pace with live and recorded lectures, weekly mock tests, and more.</p>
+        </div>
+    </div>
+
+    <!-- Row for Photo 1 -->
+    <div class="row">
+        <div class="column">
+            <div class="image-space">
+                <img src="medical ladder 2.jpg" alt="Placeholder for offline image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Photo 2 -->
+    <div class="row">
+        <div class="column">
+            <div class="image-space">
+                <img src="medical ladder 1.jpg" alt="Placeholder for offline image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for Instagram Link -->
+    <div class="row">
+        <div class="column">
+            <p>For more details or to get started, click below:</p>
+            <a href="https://www.instagram.com/medical_ladder?igsh=ZGUybnZkN2lhb2w3" class="cta" target="_blank">Enroll via Instagram</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Medical Ladder. All Rights Reserved. Your Future in Medicine Starts Here!</p>
+</footer>
+
+</body>
+</html>
+
